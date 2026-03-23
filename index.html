@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibrahim Omoboriowo | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <button id="menu-toggle" class="menu-toggle">☰</button>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <img src="assets/profile.png" alt="Profile Image" class="profile-img" id="profile-img" onclick="openProfileLightbox()" />
+      <h1>Ibrahim</h1>
+      <p>Data Scientist</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+        <a href="mailto:omoboriowo756@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        <a href="https://github.com/V0idkun" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/ibrahim-omoboriowo-5682a536b/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <div class="container">
+        <h1>Omoboriowo Ibrahim</h1>
+        <p>Junior Data Scientist & Machine Learning Enthusiast</p>
+      </div>
+    </header>
+
+    <section id="about" class="container">
+      <h2>About Me</h2>
+      <p>
+        Hi, my name is Ibrahim. I’m passionate about turning research into real-world
+        solutions by helping you analyze data and build models that reveal meaningful
+        insights. My goal is to make it easier for people to understand what their
+        data is telling them, and to bring ideas to life through intelligent analysis
+        and machine learning.
+      </p>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python</li>
+        <li><strong>Version Control:</strong> GitHub</li>
+        <li><strong>Visualization:</strong> Tableau</li>
+        <li><strong>Machine Learning:</strong> ML Models, DNN, ANN</li>
+      </ul>
+    </section>
+
+    <section id="tech-stack" class="container">
+      <h2>Tech Stack</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, SQL</li>
+        <li><strong>Frameworks & Tools:</strong> Streamlit, TensorFlow, Scikit-learn, FastAPI</li>
+        <li><strong>Visualization:</strong> Tableau, Matplotlib, Seaborn</li>
+        <li><strong>Version Control:</strong> Git, GitHub</li>
+      </ul>
+    </section>
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Nepal Earthquake Severe and Damage Level</h3>
+        <p>
+          Predicts building damage severity levels using earthquake-related features. This project aids urban planning and risk assessment by identifying vulnerable structures ahead of time.
+        </p>
+        <p><strong>Tools:</strong> Python, MySQL, Streamlit, GitHub, Scikit-learn</p>
+        <a href="https://nepaleq-qtburnextmaelfzxczagdm.streamlit.app/" target="_blank" class="button">Live Demo</a>
+
+        <div class="image-carousel" id="nepal-carousel">
+            <img src="assets/nepal_ss1.png" class="carousel-image" alt="Nepal SS" id="carousel-img" onclick="openLightbox()" />
+            <button class="carousel-btn prev" onclick="prevSlide()">&#8592;</button>
+            <button class="carousel-btn next" onclick="nextSlide()">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Disease Predictor with Symptoms</h3>
+        <p>
+          A deep learning-based tool that predicts possible diseases from symptom inputs. Designed to support healthcare providers by narrowing diagnostic possibilities using intelligent pattern recognition.
+        </p>
+        <p><strong>Tools:</strong> Python, DNN, GitHub, Streamlit</p>
+        <a href="https://github.com/V0idkun/diseases_predictions" target="_blank" class="button">View on GitHub</a>
+
+        <div class="image-carousel" id="disease-carousel">
+            <img src="assets/disease1.png" class="carousel-image" alt="Disease SS" id="carousel-img-disease" onclick="openLightboxDisease()" />
+            <button class="carousel-btn prev" onclick="prevSlideDisease()">&#8592;</button>
+            <button class="carousel-btn next" onclick="nextSlideDisease()">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="container">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h4>University of Lagos</h4>
+        <p>BSc Physics – 2019–2025</p>
+      </div>
+      <div class="edu-item">
+        <h4>GoMyCode</h4>
+        <p>Data Science Bootcamp – Jan–Jun 2025</p>
+      </div>
+    </section>
+
+    <section id="certifications" class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Data Scientist Bootcamp – GoMyCode (June 2025)</li>
+      </ul>
+      <img src="assets/gomycode_cert.png" alt="GoMyCode Certificate" class="certificate" />
+    </section>
+
+    <section id="experience" class="container">
+      <h2>Experience</h2>
+      <div class="exp-item">
+        <h4>Technical Support Assistant – Globalseam Technology</h4>
+        <p class="exp-date">2021 – 2025</p>
+        <p>Provided technical support for users, resolved software issues, and guided new clients through onboarding processes and product adoption.</p>
+        <h4>Data Analyst Intern – Tango Brook Technology</h4>
+        <p class="exp-date">oct 2025 – Present</p>
+        <p>Conducted data analysis to support business decisions, created reports and visualizations, and collaborated with cross-functional teams to identify opportunities for improvement.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: omoboriowo756@gmail.com</li>
+        <li>GitHub: <a href="https://github.com/V0idkun" target="_blank">V0idkun</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/ibrahim-omoboriowo-5682a536b/" target="_blank">Ibrahim Omoboriowo</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Let’s build something great together — reach out anytime!</p>
+      <p>&copy; 2025 Ibrahim Omoboriowo. All rights reserved.</p>
+    </footer>
+  </div>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img src="" id="lightbox-img" />
+    <span class="close-btn" onclick="closeLightbox()">×</span>
+  </div>
+  <script src="script.js"></script>
+
+  <!-- Profile Lightbox -->
+  <div id="profile-lightbox" class="lightbox" onclick="closeProfileLightbox()">
+    <img src="assets/profile.png" alt="Profile Full" id="profile-full-img" />
+    <span class="close-btn" onclick="closeProfileLightbox()">×</span>
+  </div>
+
+</body>
+</html>
